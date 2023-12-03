@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Navigation from "@/Components/Navigation"
+import Navigation from "../Components/Navigation"
 
 
 const Servicios = () => {
@@ -8,7 +8,8 @@ const Servicios = () => {
     <>
 
 <Head>
-   <title> Comidas Caceras</title> 
+   <title> Cabras Locas</title> 
+  
 </Head>
   
   <main>

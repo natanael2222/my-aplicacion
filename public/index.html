@@ -1,29 +1,20 @@
 
     <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cabraslocas</title>
-    <link rel="stylesheet" href="css/normalize.css">    
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-    <header className=="header">
-        <div className=="container">
-            <div className=="row">
-                <div className=="four columns">
-                    <h1><img src="../src/images//logo.png" alt="logo">Cabras<br>Locas</h1>     
+
+    <header className="header">
+        <div className="container">
+            <div className="row">
+                <div className="four columns">
+                    <h1><img src="../src/images/logo.png" alt="logo">Cabras<br>Locas</h1>     
                 </div>
-                <div className=="two columns u-pull-right">
+                <div className="two columns u-pull-right">
                     <ul> 
-                        <li className=="submenu">
-                            <img src="../src/images/cart.png" alt="cart">
+                        <li className="submenu">
+                            <img src="../src/images/cart.png" alt="">
                             <div id="carrito">
-                                <p className=="vaciar">carrito vacio</p>
-                                <table className=="u-full-width">         
+                                <p className="vacio">carrito vacio</p>
+                                <table className="u-full-width">         
                                     <thead>
                                         <tr>
                                             <th>imagem</th>
@@ -38,7 +29,7 @@
                                             </td>
                                             <td>Hamburguesa helado</td>
                                             <td>$500</td>
-                                            <td><a href="a" className=="borrar-platillo"></a></td>  
+                                            <td><a href="#" className="borrar-platillo"></a></td>  
                                         </tr>
                                         <tr>
                                             <td>
@@ -46,27 +37,27 @@
                                             </td>
                                             <td>Hamburguesa con gaseosa</td>
                                             <td>$1500</td>
-                                            <td><a href="a" className=="borrar-platillo"></a></td>  
+                                            <td><a href="#" className="borrar-platillo"></a></td>  
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="#" className=="button u-full-width">vaciar carrito</a>
+                                <a href="#" className="button u-full-width">vaciar carrito</a>
                             </div>                
                         </li>
                     </ul>
                 </div>
         </header>
 
-        <div className=="hero">
-            <div className=="container">
-                <div className=="row">
-                    <div className=="six columns">
-                        <div className=="contenido-hero">
+        <div className="hero">
+            <div className="container">
+                <div className="row">
+                    <div className="six columns">
+                        <div className="contenido-hero">
                             <h2>prueba una hamburguesas</h2>
                             <p>todas las hamburguesas a $15</p>
                             <form>
-                                <input className=="u-full-width" type="text" placeholder="que te gustaria probar?" id="buscador">
-                                <input type="submit" className=="submit-buscador">
+                                <input className="u-full-width" type="text" placeholder="que te gustaria probar?" id="buscador">
+                                <input type="submit" className="submit-buscador">
                             </form>
                         </div>
                     </div>
@@ -74,20 +65,20 @@
             </div>
         </div>
         
-        <div className=="barra">
-            <div className=="container">
-                <div className=="row">
-                    <div className=="four columns icono1">
+        <div className="barra">
+            <div className="container">
+                <div className="row">
+                    <div className="four columns icono1">
                     <p>100 platillos diferentes<br>
                     explora los nuevos platillos</p>
                     </div>
-                    <div className=="four columns icono2">
-                        <p>100 platillos diferentes<br>
-                        explora los nuevos platillos</p>
+                    <div className="four columns icono2">
+                        <p>Cheff expertos<br>
+                     Prueba las nuevas bebidas favorita </p>
                     </div>
-                <div className=="four columns icono3">
-                        <p>100 platillos diferentes<br>
-                        explora los nuevos platillos</p>
+                <div className="four columns icono3">
+                        <p>Bebida Ilimitada<br>
+                        Prueva tu bebida favorita</p>
                     </div>
                 </div>
             </div>
@@ -95,103 +86,128 @@
         
     
     
-        <div className=="lista-platillos" className=="container">
-            <h1 className=="encabezado">pedidos en lineas</h1>
+        <div className="lista-platillos" className="container">
+            <h1 className="encabezado">pedidos en lineas</h1>
 
-            <div className=="row">
-                <div className=="four columns">
-                    <div className=="card">
-                        <img src="../src/images/cabradoble.jpg" className=="imagen-platillo u-full-width">
-                        <div className=="infor-card">   
+            <div className="row">
+                <div className="four columns">
+                    <div className="card">
+                        <img src="../src/images/cabradoble.jpg" className="imagen-platillo u-full-width">
+                        <div className="info-card">   
                             <h4>Cabra Simple</h4>
                             <p> bebidas limitadas</p>   
                             <img src="../src/images/estrellas.png" alt="estrellas">
-                            <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                            <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                            <p className="precio">$50<span className="u-pull-right">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">agregar al carrito</a>
                         </div>  
                     </div>
                 </div>
-                <div className=="four columns">
-                    <div className=="card">
-                        <img src="../src/images/cabratriple.jpg" className=="imagen-platillo u-full-width">
-                        <div className=="infor-card">   
+                <div className="four columns">
+                    <div className="card">
+                        <img src="../src/images/cabratriple.jpg" className="imagen-platillo u-full-width">
+                        <div className="info-card">   
                             <h4>Cabra Doble</h4>
                             <p> bebidas limitadas</p>   
                             <img src="../src/images/estrellas.png" alt="estrellas">
-                            <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                            <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                            <p className="precio">$50 <span className="u-pull-right">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito"data-id="2">agregar al carrito</a>
                         </div> 
                     </div>
                 </div>
-                <div className=="four columns">
-                            <div className=="card">
-                                <img src="../src/images/platillo3.jpg" className=="imagen-platillo u-full-width">
-                                <div className=="infor-card">   
+                <div className="four columns">
+                            <div className="card">
+                                <img src="../src/images/platillo3.jpg" className="imagen-platillo u-full-width">
+                                <div className="info-card">   
                                     <h4>Cabra Triple</h4>
                                     <p> bebidas limitadas</p>   
                                     <img src="../src/images/estrellas.png" alt="estrellas">
-                                    <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                                    <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                                    <p className="precio">$50<span className="u-pull-right">$15</span></p>
+                                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">agregar al carrito</a>
                                 </div>   
                             </div>
                         </div>
                     </div>
 
                     
-            <div className=="row">
-                <div className=="four columns">
-                    <div className=="card">
-                        <img src="../src/images/platillo1.jpg" className=="imagen-platillo u-full-width">
-                        <div className=="infor-card">   
+            <div className="row">
+                <div className="four columns">
+                    <div className="card">
+                        <img src="../src/images/platillo1.jpg" className="imagen-platillo u-full-width">
+                        <div className="info-card">   
                             <h4>BIG Cabra Loca</h4>
                             <p> bebidas limitadas</p>   
                             <img src="../src/images/estrellas.png" alt="estrellas">
-                            <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                            <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                            <p className="precio">$50 <span className="u-pull-right">$15</span></p>
+                            <a href="#" class="u-full-width button-primary  button input agregar-carrito" data-id="4">agregar al carrito</a>
                         </div>  
                     </div>
                 </div>
-                <div className=="four columns">
-                    <div className=="card">
-                        <img src="../src/images/cabracompleta.jpg" className=="imagen-platillo u-full-width">
-                        <div className=="infor-card">   
+                <div className="four columns">
+                    <div className="card">
+                        <img src="../src/images/cabracompleta.jpg" className="imagen-platillo u-full-width">
+                        <div className="info-card">   
                             <h4>Cabra Completa</h4>
                             <p> bebidas limitadas</p>   
-                            <img src="img/estrellas.png" alt="estrellas">
-                            <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                            <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                            <img src="../src/images/estrellas.png" alt="estrellas">
+                            <p className= "precio"> $50 <span className ="u-pull-right">$15</span>
+                            </p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito"data-id="5">agregar al carrito</a>
                         </div> 
                     </div>
                 </div>
-                <div className=="four columns">
-                            <div className=="card">
-                                <img src="../src/images/platillo3.jpg" className=="imagen-platillo u-full-width">
-                                <div className=="infor-card">   
+                <div className="four columns">
+                            <div className="card">
+                                <img src="../src/images/platillo3.jpg" className="imagen-platillo u-full-width">
+                                <div className="info-card">   
                                     <h4>Combo Especial</h4>
                                     <p> bebidas limitadas</p>   
                                     <img src="../src/images/estrellas.png" alt="estrellas">
-                                    <p className=="precio$50"<span className=="u-pull.right">$15</span></p>
-                                    <a href="#" className=s="u-full-width button input agregar-carrito" data-id="1">agregar al carrito</a>
+                                    <p className= "precio"> $50 <span className="u-pull-right">$15</span> </p>
+                                    <a href="#" class="u-full-width button-primary button input agregar-carrito"data-id="6">agregar al carrito</a>
                                 </div>   
                             </div>
                         </div>
                     </div>
 </div> 
-<footer className=="footer">
-    <div className=="container">
-        <div className=="row">
-            <div className=="four columns">
-                <nav className=="menu">
-                    <a className=="enlace"
+<footer className="footer">
+    <div className="container">
+        <div className="row">
+            <div className="four columns">
+                <nav className="menu">
+
+                    <a className="enlace"
+                    href="#">Pedidos a domicilio </a>
+
+                    <a className="enlace"
+                    href="#">Pedidios en linea</a>
+
+                    <a className="enlace"
+                    href="#">Pedidos por telefono</a>
+
+                    <a className="enlace"
+                    href="#">Menu</a>
+
+                    <a className="enlace"
+                    href="#">Bebidas</a>
+
+                </nav>
+            </div>
+            <div className="four columns">
+                <nav className="menu">
+                    
+                    <a className="enlace"
                     href="#">restaurante</a>
-                    <a className=="enlace"
+
+                    <a className="enlace"
                     href="#">ubicacion</a>
-                    <a className=="enlace"
+
+                    <a className="enlace"
                     href="#">telefono</a>
+
                 </nav>
             </div>
         </div>
     </div>
 </footer>
 </body>
-</html>
+</Html>

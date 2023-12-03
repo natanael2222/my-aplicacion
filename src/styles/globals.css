@@ -4,7 +4,8 @@
   margin: 0;
 }
 
- /* shooping cart */
+
+ /* shooping cart
 .box {
   padding: 1rem;
   margin: 1rem;
@@ -12,7 +13,7 @@
 }
 .grid-responsive{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax (200px,1fr));
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 .product {
@@ -20,8 +21,410 @@
   background-color: blueviolet;
   color: white;
 }
-.cart- item {
+.cart-item {
   background-color: crimson;
   padding: 1rem;
   color: white;
+}
+
+ */
+
+
+
+.button.u-full-width {
+ 
+  align-content: center;
+}
+
+.body {
+  background-color:#17181b
+}
+.h1 { 
+  text-align: center;
+  color:white;
+}
+.h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+.header{
+  padding: 20px;
+  background: #1d2124;
+  text-align: center;
+}
+
+@media (min-width : 750px){
+  .header {
+      text-align: left;
+
+  }
+}
+.barra-platilo{
+  background-color: #fbaf32;
+  border-radius: 50%;
+  padding: 5px 10px ;
+ text-decoration: none;
+  color: rgb(71,71,71);
+  font-weight: bold;
+}
+.ul{
+  list-style: none;
+}
+
+.hero{
+  background-image: url(../images/hero.jpg);
+  height:551px;
+}
+.encabezado{
+  margin: 30px 0;
+  color:white;
+}
+.submenu{
+  position: relative;
+}
+.submenu #carrito{
+  display: none;
+}
+.submenu:hover #carrito{
+  display: block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background: #17181b;
+  padding: 20px;
+}
+.vacio{
+  padding: 10px;
+  background-color:#fbaf32;
+  text-align: center;
+  border-radius : 10px;
+  color: rgb(255,255,255);
+}
+.button{
+  background-color:#fbaf32;
+  color: rgb(255,255,255);
+}
+.contenido-hero {
+  margin-top: 80px;
+  color:white;
+}
+.contenido-hero form{
+  position: relative;
+  margin: 0;
+
+}
+.contenido-hero form #buscador{
+  height:50px;
+  margin: 0;
+}
+.contenido-hero form .submit-buscador {
+  display: inline;
+  position: absolute;
+  
+  text-indent: -9999px;
+  width:50px;
+  height: 50px;
+  background-image: url(../images/lupa.png);
+  background-position:right center;
+  background-repeat:no-repeat;
+  border:none;
+}
+
+.buscador {
+ padding-left: 15px;
+}
+
+.submit-buscador {
+  display: inline-block;
+  border-radius: 0 5px 5px 0;
+}
+.barra{
+  padding: 20px 0;
+  background: #fbaf32;
+  background:-webkit-linear-gradient(left, #b95a00 0%, #ad5400 100% );
+}
+
+.u-full-width {
+  width: 400px;
+}
+
+
+
+
+/*******Navigation*********/
+.navbar {
+  display: flex;
+  height: 2rem;
+  background-color: black;
+}
+
+.link1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  color: #d6853a;
+
+}
+
+.link1:hover {
+  color: wheat;
+}
+
+/********logo y nombre******/
+.four-columns {
+  display:flex;
+  justify-content:flex-start;
+  padding-left: 55px;
+  background-image: url(../images/logo.png);
+  background-position:left top;
+  background-repeat:no-repeat;
+  border:none;
+}
+
+.fourColumns {
+  display:flex;
+  justify-content: flex-start;
+  color: white;
+  background-color: #202325;
+  width: 100%;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+/*******Carrito desplegable********/
+
+.carritoDesplegable {
+  display: flex;
+  justify-content: flex-end;
+}
+.submenu {
+  display:flex;
+  align-items: flex-end;
+  margin-top: -120px;
+  background-image: url(../images/cart.png);
+  background-position:left top;
+  background-repeat:no-repeat;
+  border:none;
+}
+
+.vaciar {
+  display: flex;
+  padding-left: 50px;
+  text-decoration: none;
+  color: white;
+  
+}
+.nombre-Tabla {
+  color: aliceblue;
+  text-align: center;
+}
+
+.opcionDeCompra {
+  color: #fbaf32;
+  padding: 5px;
+}
+
+
+.estiloBotonVaciar {
+  color: white;
+  text-decoration: none;
+  align-content: center;
+  align-items: center;
+}
+
+.imagenDePlatillos {
+
+  height: 5rem;
+  width: 6rem;
+  padding: 5px;
+}
+
+
+/*******Cards Container******/
+.contenedor{
+  height: 64rem;
+  width: 27rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.estiloBoton {
+      
+      background-color: rgb(255, 153, 0);
+      color: rgb(247, 232, 232);
+      border: none;
+      border-radius: .5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      margin-bottom: 15px;
+}
+.botonCompra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  padding: 20px 20px 10px;
+  line-height: 0;
+  font-weight: bold;
+  
+}
+p:hover {
+  color:#434446
+}
+.estiloCards {
+  width: 350px;
+  height: 350px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  background-color: black;
+}
+
+.estiloImagen {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.estilocardscont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #202325;
+  padding: 20px;
+}
+
+.estiloTexto {
+  margin: auto;
+  padding: 0 10px;
+  color: rgb(255, 115, 0);
+}
+
+.estiloH4 {
+  color: #ad5400;
+  margin-top: 10px;
+}
+
+
+/*********Carousel**********/
+.contenedorCarousel {
+  display: flex;
+  justify-content: center;
+ 
+  width: 100%;
+  background-color: #202325;
+}
+
+.imagesBurguers {
+  display: flex;
+  align-items: center;
+  height: 43rem;
+  width: auto;
+}
+
+.estiloCarouselCont {
+  display: flex;
+  width: 100%;
+}
+
+.estiloCaption {
+  color:white;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/******FOOTER*******/
+.footer1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  padding: 3rem;
+  background-color: black;
+}
+
+.link {
+  color: #d6853a;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: wheat;
+}
+
+.barra{
+  padding: 20px 0;
+  background: #fbaf32;
+  background:-webkit-linear-gradient(left, #b95a00 0%, #ad5400 100% );
+
+}
+.barra p {
+  margin: 0;
+  color: white;
+}
+.icono{
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+} 
+
+.lista-platillos .row{
+  margin-bottom: 20px;
+}
+.agregar-carrito{
+  margin: 10px 0;
+}
+.card{
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #1d2124;
+
+}
+@media (min-width:550px){
+  .card{
+      text-align: left;
+  }
+}
+.info-card {
+  padding: 10px 20px;
+  color:white;
+}
+.info-card p,
+.card h4{
+  margin-bottom: 5px;
+}
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top:10px;
+}
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 22px;
+}
+.footer{
+  margin-top: 40px;
+  padding-top: 40px;
+  background: #1d2124;
+}
+.footer .menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
 }

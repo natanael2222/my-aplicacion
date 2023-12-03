@@ -1,6 +1,7 @@
 
 
 export const shoppingInitialState ={
-products:[],
+products:[
+],
     cart:[],
 }

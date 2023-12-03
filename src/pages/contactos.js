@@ -1,6 +1,6 @@
 
 import Head from "next/head"
-import Navigation from "@/Components/Navigation"
+import Navigation from "../Components/Navigation"
 
 
 const Contactos = () => {
@@ -8,10 +8,7 @@ const Contactos = () => {
    <>
    
        
-   <Head>
-  
-  <title> Comidas Caceras</title>
-  </Head>
+   <Head/>
   
   <main>
     <header>

@@ -1,7 +1,7 @@
 import {useReducer}from "react";
-import { TYPES } from "@actions/actions";
-import { reducer } from "@reducer/reducer";
-import { initialState } from "../reducer/initialState";
+import { TYPES } from "../Actions/actions";
+import { reducer } from "../Actions/reducer";
+import { initialState } from "../Actions/initialState";
 
 const contador =() => {
     const [state,dispatch] = useReducer (reducer,initialState);

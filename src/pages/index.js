@@ -1,40 +1,36 @@
-import Navigation from "@/Components/Navigation"
-import ShoppingCart from "@/Actions/ShoppingCart"
-import Head from "next/head"
-import Footer from "@/pages/Footer"
-import HtmlContent from "@/Components/HtmlContent"
+
+import ShoppingCart from "../Actions/ShoppingCart";
+import Head from "next/head";
+import HtmlContent from "../Components/HtmlContent";
+import Footer from "../Components/Footer";
+import CarouselBurguer from "../Components/CarouselBurguer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Section from "../Components/Section";
+import Navigation from "../Components/Navigation";
 
 
-
-const index = () => {
+const Index = () => {
+  
   return (
     <>
     
-    
     <Head>
-   <HtmlContent/>
-   
-    
-   <title> Comidas Caceras</title>
-    <link rel="stylesheet" href="../styles/skeleton.css" />
-    <link rel="stylesheet" href="../styles/normalize.css" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    
+    <title> Cabras Locas</title> 
+
 
     </Head>
-    
+    <Navigation/> 
     <main>
-      <header>
-        <Navigation />
-      <ShoppingCart/>
-      </header>
-      
-    <Footer/>   
+   <HtmlContent/> 
+     <Section/>
+     <CarouselBurguer/>
+     {/* <ShoppingCart/> */}
+     <Footer/>
+     
     </main>
-    
-    
+      
     </>
   )
 }
 
-export default index
+export default Index

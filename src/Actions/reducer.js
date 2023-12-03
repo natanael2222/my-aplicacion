@@ -1,5 +1,5 @@
-import { TYPES } from "@/Actions/actions";
-import { initialState } from "../reducer/initialState";
+import { TYPES } from "../Actions/actions";
+import { initialState } from "../Actions/initialState";
 
 
 export const reducer = (state,action) => {

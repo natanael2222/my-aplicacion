@@ -1,12 +1,17 @@
 
+import Link from "next/link"
 
 const Footer = () => {
   return (
     <>
-    <section>
-   
-    </section>
+
+    <footer className="footer1">
+
     
+    </footer>
+
+
+
     </>
   )
 }

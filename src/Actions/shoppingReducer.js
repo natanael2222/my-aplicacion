@@ -1,5 +1,5 @@
-import { TYPES } from "@/Actions/actions";
-import { shoppingInitialState } from "@/Actions/shoppingInitialState";
+import { TYPES } from "../Actions/actions";
+import { shoppingInitialState } from "../Actions/shoppingInitialState";
 
 
 
@@ -10,7 +10,12 @@ export const ShoppingReducer =(state,action) => {
     switch (action.type){
 
 
-        case TYPES.READ_STATE:{
+        case TYPES.READ_STATE:{ 
+            return{
+                ...state,
+                products: action.payload.products,
+                cart: action.payload.cart
+            }
             
         }
         case TYPES.ADD_TO_CART:{
@@ -45,7 +50,7 @@ export const ShoppingReducer =(state,action) => {
             ? {
                 ...state,
                 cart: state.cart.map(item =>
-                    item.id === intemToDelete.id
+                    item.id === itemToDelete.id
                         ? {...item, quantity: item.quantity -1}
                     : item
                 )

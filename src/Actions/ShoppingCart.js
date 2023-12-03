@@ -1,20 +1,43 @@
 import React, { useReducer, useEffect } from 'react';
 import axios from 'axios';
-import { TYPES } from '@/Actions/actions';
-import { shoppingInitialState } from '@/Actions/shoppingInitialState';
-import { ShoppingReducer } from '@/Actions/shoppingReducer';
-import Product from '@/Actions/Product';
-import CartItem from '@/Actions/CartItem';
+import { TYPES } from '../Actions/actions';
+import { shoppingInitialState } from '../Actions/shoppingInitialState';
+import { ShoppingReducer } from '../Actions/shoppingReducer';
+import Product from '../Actions/Product';
+import CartItem from '../Actions/CartItem';
 
-const ENDPOINTS = {
-  products: 'http://localhost:5000/products',
-  cart: 'http://localhost:5000/cart',
-};
+
 
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(ShoppingReducer, shoppingInitialState);
 
   const { products, cart } = state;
+
+
+  const updateState = async () => {
+    
+const ENDPOINTS = {
+  products: 'http://localhost:5000/products',
+  cart: 'http://localhost:5000/cart'
+};
+   
+      const resProducts = await axios.get(ENDPOINTS.products),
+      resCart = await axios.get(ENDPOINTS.cart);
+
+      const productsList = await resProducts.data,
+       cartItems = await resCart.data
+
+      dispatch({ type: TYPES.READ_STATE, payload: {
+        products: productsList,
+      cart: cartItems
+  }})
+    
+
+  };
+
+  useEffect(() => {
+    updateState();
+  }, [])
 
   const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id });
 
@@ -24,31 +47,9 @@ const ShoppingCart = () => {
     } else {
       dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
     }
-  };
+  }
 
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
-
-  const updateState = async () => {
-    try {
-      const resProducts = await axios.get(ENDPOINTS.products);
-      const resCart = await axios.get(ENDPOINTS.cart);
-
-      const productsList = resProducts.data;
-      const cartItems = resCart.data;
-
-      dispatch({ type: TYPES.UPDATE_PRODUCTS, payload: productsList });
-      dispatch({ type: TYPES.UPDATE_CART, payload: cartItems });
-
-      console.log(productsList);
-      console.log(cartItems);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  useEffect(() => {
-    updateState();
-  }, []);
 
   return (
     <>
@@ -66,7 +67,8 @@ const ShoppingCart = () => {
         ))}
       </div>
       <h4>
-        Total: $ {cart.reduce((acumulador, item) => acumulador + item.price * item.quantity, 0)}
+        Total: $ {cart.reduce((acumulador, item) => { 
+          return acumulador + (item.price * item.quantity)}, 0)}
       </h4>
       <br />
       <button onClick={clearCart}>Limpiar Carrito</button>
